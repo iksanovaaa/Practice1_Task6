@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 //Ввести а1, а2, а3, М, N, L. Построить последовательность чисел ак = (7 / 3 * ак–1 + ак-2 ) /2 * ак–3. 
 //Построить N элементов последовательности, либо найти первые M ее элементов, большие числа L(в зависимости от того, что выполнится раньше).
@@ -81,7 +79,7 @@ namespace Task6
         {
             bool next, end = false;
             int keyNum;
-            Console.WriteLine("Для выхода из программы нажмите Esc, для ввода другого массива нажмите Enter.");
+            Console.WriteLine("Для выхода из программы нажмите Esc, для формирования другой последовательности нажмите Enter.");
             do
             {
                 keyNum = Console.ReadKey().KeyChar;
