@@ -99,10 +99,11 @@ namespace Task6
             return ak;
         }
         public static void Repeat(int k)
-        {
-            if (k >= N && currM >= M) Console.WriteLine("Построены первые {0} элементов и найдены первые {1} элементов больше {2}", N, M, L);
-            else if (k >= N) Console.WriteLine("Построены первые {0} элементов", N);
-            else if (currM >= M) Console.WriteLine("Найдены первые {0} элементов больше {1}", M, L);
+        {            
+            if (k >= N && currM >= M) Console.WriteLine("Построены первые {0} элемента(ов) и найдены первые {1} элемента(ов) больше {2}. " +
+                "Желтым цветом выделены элементы больше {2}.", N, M, L);
+            else if (k >= N) Console.WriteLine("Построены первые {0} элемента(ов). Желтым цветом выделены элементы больше {1}.", N, L);
+            else if (currM >= M) Console.WriteLine("Найдены первые {0} элемента(ов) больше {1}. Желтым цветом выделены элементы больше {1}.", M, L);
             else
             {
                 NextNum(k);
